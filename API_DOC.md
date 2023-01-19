@@ -2,6 +2,8 @@
 
 Constraint & Indexes :
 
+Table Users :
+
 - \_id(unique, Primary Key),
 - userName(unique),
 - emailAddress(unique),
