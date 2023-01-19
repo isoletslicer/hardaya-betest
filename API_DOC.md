@@ -1,3 +1,13 @@
+## Database
+
+Constraint & Indexes :
+
+- \_id(unique ,
+- Primary Key),
+- userName(unique),
+- emailAddress(unique),
+- identityNumber(unique)
+
 ## Endpoints
 
 List of Available Endpoints:
