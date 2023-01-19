@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "40e9a81e-3e9d-494e-b2d1-77cb46b34db1",
+		"name": "hardaya_betes_pmanhit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14483800"
+	},
+	"item": [
+		{
+			"name": "add a user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "niki",
+							"type": "text"
+						},
+						{
+							"key": "emailAddress",
+							"value": "niki@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "niki",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4001/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "mbappuk",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "mbappuk",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4001/login/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYzgzMzlkNzg5ZGRjYjg3NmRiOTUzYSIsInVzZXJOYW1lIjoibWJhcHB1ayIsImlhdCI6MTY3NDEyMzc3M30.QyBQzRU9yACkzWeMDALRxDEgoq_K72noGnuXpOVHHvY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4001/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get one user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYzgzMzlkNzg5ZGRjYjg3NmRiOTUzYSIsInVzZXJOYW1lIjoibWJhcHB1ayIsImlhdCI6MTY3NDA5NDM2NX0.gKD0tpEjmkeGWwrhD3xVZ3b8EzaxdstlIkEGsBJgt1M",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4001/users/63c8339d789ddcb876db953a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"users",
+						"63c8339d789ddcb876db953a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update a user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "access_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYzgzMzlkNzg5ZGRjYjg3NmRiOTUzYSIsInVzZXJOYW1lIjoibWJhcHB1ayIsImlhdCI6MTY3NDA5MDk5NH0.pV13yyAqJ8Ab6rce-XsgzrFg27z01ztBPAsxyHNtGpU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "mbappuk",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "mbappuk",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4001/users/63c8339d789ddcb876db953a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"users",
+						"63c8339d789ddcb876db953a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete a user",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "access_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYzg3ZjcwNjQ2OTkyNjgyMjUwNmY2NyIsInVzZXJOYW1lIjoibmlraSIsImlhdCI6MTY3NDA5MDA3OX0.VFRVUe5REtUFRIKdbFC_reBoNFH0gfBgPXNjnY8WVBA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4001/users/63c87f706469926822506f67",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"users",
+						"63c87f706469926822506f67"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get one user by identitynumber",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYzgzMzlkNzg5ZGRjYjg3NmRiOTUzYSIsInVzZXJOYW1lIjoibWJhcHB1ayIsImlhdCI6MTY3NDA5MjczM30.guuz6ZQyLwvqf8VVRW43E0ijfaOMVb8Hx3eLDpHnDA8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4001/users/user/i/59057419",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"users",
+						"user",
+						"i",
+						"59057419"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get one user by identitynumber Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYzgzMzlkNzg5ZGRjYjg3NmRiOTUzYSIsInVzZXJOYW1lIjoibWJhcHB1ayIsImlhdCI6MTY3NDA5MjczM30.guuz6ZQyLwvqf8VVRW43E0ijfaOMVb8Hx3eLDpHnDA8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4001/users/user/a/38606401",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"users",
+						"user",
+						"a",
+						"38606401"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
