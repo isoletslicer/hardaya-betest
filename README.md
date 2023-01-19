@@ -1,6 +1,6 @@
 ms-hardaya-betest
 
-A BE Test
+A BE Test (Local)
 
 Instruction (after cloning this repo):
 
@@ -25,7 +25,7 @@ BEFORE USE : MAKE SURE THAT YOUR LOCAL ALREADY INSTALLED MONGODB (if possible) m
 
 Turn it on by running `mongod` and open your mongodb compass, connect mongodb to local
 
-**Make sure to run your Redis in local too before run the express server app**
+**Make sure to run your Redis in local too before run the express server app (local)**
 
 BEFORE RUNNING : MAKE SURE THAT YOUR CONFIG OF PORT/HOST/PASSWORD IN `ms-hardaya-betest/config/connectRedis` ARE MATCHING WITH YOUR DATABASE USERNAME AND PASSSWORD. IF NOT, PLEASE EDIT THE CONFIG IN `ms-hardaya-betest/config/connectRedis`.
 
