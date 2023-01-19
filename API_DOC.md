@@ -52,7 +52,11 @@ _Response (400 - Bad Request)_
 }
 OR
 {
-  "message": "password cannot be null"
+  "message": "username cannot be empty"
+}
+OR
+{
+  "message": "email cannot be empty"
 }
 OR
 {
