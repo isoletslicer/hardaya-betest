@@ -2,7 +2,7 @@
 
 Constraint & Indexes :
 
-- \_id(unique ,
+- \_id(unique),
 - Primary Key),
 - userName(unique),
 - emailAddress(unique),
