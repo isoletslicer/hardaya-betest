@@ -2,8 +2,7 @@
 
 Constraint & Indexes :
 
-- \_id(unique),
-- Primary Key),
+- \_id(unique, Primary Key),
 - userName(unique),
 - emailAddress(unique),
 - identityNumber(unique)
